@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://metehan.dev/sitemap.xml
+Host: https://metehan.dev
