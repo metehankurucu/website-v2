@@ -6,14 +6,14 @@ export const PROJECTS: Project[] = [
     title: "Panoyabak",
     description: "A digital board mobile & web app with events.",
     developed: ["Mobile App", "Web App", "Backend"],
-    image: getProjectImagePath("panoyabak.png"),
+    image: getProjectImagePath("panoyabak.webp"),
     types: [ProjectType.Freelance],
   },
   {
     title: "News UI",
     description: "News web app with Next.js, TypeScript and Chakra UI.",
     developed: ["Website"],
-    image: getProjectImagePath("news.png"),
+    image: getProjectImagePath("news.webp"),
     links: {
       repo: "https://github.com/metehankurucu/news-ui",
       web: "https://news-ui-chi.vercel.app/",
@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
     description:
       "A financial mobile app that includes currency, stock market, gold, crypto currency, news and various calculators.",
     developed: ["Mobile App"],
-    image: getProjectImagePath("dovizmix.png"),
+    image: getProjectImagePath("dovizmix.webp"),
     types: [ProjectType.Freelance],
   },
   {
@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     description:
       "A mobile app that offers scattered raffles on social media on a single platform.",
     developed: ["Mobile App", "Landing Page", "Backend", "Admin Panel"],
-    image: getProjectImagePath("raffleapp.png"),
+    image: getProjectImagePath("raffleapp.webp"),
     types: [ProjectType.Personal, ProjectType.Freelance],
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     description:
       "The online event website prepared for the Azerbaijan Oral-B Pro Zirvəsi.",
     developed: ["Website"],
-    image: getProjectImagePath("oralb.png"),
+    image: getProjectImagePath("oralb.webp"),
     types: [ProjectType.Freelance],
   },
   {
@@ -68,14 +68,14 @@ export const PROJECTS: Project[] = [
     description:
       "A web application for students preparing for the university exam. Students can view the exam result graphics, record the lessons they are studying, and track books and subjects of lessons.",
     developed: ["Website", "Backend"],
-    image: getProjectImagePath("studentcoaching.png"),
+    image: getProjectImagePath("studentcoaching.webp"),
     types: [ProjectType.Freelance],
   },
   {
     title: "Taboo Game",
     description: "The mobile app of the word guessing game Taboo.",
     developed: ["Mobile App"],
-    image: getProjectImagePath("taboo.png"),
+    image: getProjectImagePath("taboo.webp"),
     types: [ProjectType.Hobby, ProjectType.Personal],
   },
 
@@ -123,7 +123,7 @@ export const PROJECTS: Project[] = [
     description:
       "A mobile app that allows people to meet people close to each other by solving questions.",
     developed: ["Mobile App", "Backend", "Web App", "Admin Panel"],
-    image: getProjectImagePath("meeth.png"),
+    image: getProjectImagePath("meeth.webp"),
     types: [ProjectType.Personal],
   },
   {
@@ -141,7 +141,7 @@ export const PROJECTS: Project[] = [
     links: {
       repo: "https://github.com/metehankurucu/filexist",
     },
-    image: getProjectImagePath("filexist.png"),
+    image: getProjectImagePath("filexist.webp"),
     types: [ProjectType.Hobby, ProjectType.OpenSource],
   },
 ];
