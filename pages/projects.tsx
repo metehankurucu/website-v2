@@ -64,6 +64,7 @@ const Projects = ({ allProjects }: Props) => {
               const isSelected = types?.includes(type);
               return (
                 <Button
+                  aria-label={type}
                   key={type}
                   size="sm"
                   m="1"

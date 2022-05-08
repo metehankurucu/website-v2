@@ -54,6 +54,7 @@ const Greeting = ({ onMore }: Props) => {
         </Text>
         <Box display={"flex"} alignItems="center" my="5">
           <Button
+            aria-label="More"
             colorScheme={"cyan"}
             borderRadius={"full"}
             color={colors.light}
@@ -63,6 +64,7 @@ const Greeting = ({ onMore }: Props) => {
           </Button>
           <Button
             ml="1"
+            aria-label="View projects"
             variant={"ghost"}
             colorScheme={"cyan"}
             borderRadius={"full"}

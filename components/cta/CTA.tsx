@@ -50,6 +50,7 @@ const CTA = (props: Props) => {
         flexDirection={{ base: "column", sm: "row" }}
       >
         <Button
+          aria-label="Send a message"
           backgroundColor={colors.primary}
           color={"white"}
           _hover={{ transform: `scale(1.02)` }}

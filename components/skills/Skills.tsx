@@ -21,6 +21,7 @@ const Skills = (props: Props) => {
         <SkillsList items={techStack.main} />
         <Box display={"flex"} alignItems="center" flexDirection="column">
           <Button
+            aria-label="View familiar ones"
             textAlign={"center"}
             fontSize={"md"}
             m="3"

@@ -2,6 +2,7 @@ import React from "react";
 import {
   Box,
   Button,
+  ButtonProps,
   Fade,
   ScaleFade,
   SlideFade,
@@ -47,6 +48,7 @@ const Header = ({ menuVisible, shouldRenderMenu, toggleMenu }: Props) => {
             position={"relative"}
           >
             <Button
+              aria-label="Navigation Menu"
               onClick={toggleMenu}
               _focus={{ boxShadow: "none" }}
               px="3"
@@ -77,6 +79,7 @@ const Header = ({ menuVisible, shouldRenderMenu, toggleMenu }: Props) => {
                         to={item.to}
                         key={index.toString()}
                         onClick={toggleMenu}
+                        aria-label={item.title}
                       >
                         {item.title}
                       </NavbarItem>
@@ -89,6 +92,7 @@ const Header = ({ menuVisible, shouldRenderMenu, toggleMenu }: Props) => {
                       in: menuVisible,
                     }}
                     onClick={toggleMenu}
+                    aria-label={"Hide Navigation Menu"}
                   >
                     <IoCloseOutline size={26} />
                   </NavbarItem>
@@ -109,7 +113,7 @@ const Header = ({ menuVisible, shouldRenderMenu, toggleMenu }: Props) => {
   );
 };
 
-interface NavbarItemProps {
+interface NavbarItemProps extends ButtonProps {
   children: React.ReactNode;
   onClick: () => void;
   to?: string;
@@ -121,6 +125,7 @@ const NavbarItem = ({
   onClick,
   to,
   slideFadeProps,
+  ...props
 }: NavbarItemProps) => {
   const colors = useColors();
   return (
@@ -133,6 +138,7 @@ const NavbarItem = ({
           _focus={{ boxShadow: "none" }}
           px="3"
           m="1"
+          {...props}
         >
           {children}
         </Button>

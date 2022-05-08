@@ -11,6 +11,7 @@ const NotFound: NextPage = () => {
     <Box display={"flex"} flexDirection="column">
       <PageTitle>Page Not Found</PageTitle>
       <Button
+        aria-label="Return to home"
         display={"flex"}
         alignSelf="center"
         colorScheme={"cyan"}

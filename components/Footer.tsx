@@ -38,7 +38,11 @@ const Footer = ({ ...props }: Props) => {
           {NAVBAR_LINKS.map((link) => {
             return (
               <NextLink key={link.to} passHref href={link.to}>
-                <Button variant={"ghost"} fontWeight={"600"}>
+                <Button
+                  aria-label={link.title}
+                  variant={"ghost"}
+                  fontWeight={"600"}
+                >
                   {link.title}
                 </Button>
               </NextLink>
@@ -58,7 +62,11 @@ const Footer = ({ ...props }: Props) => {
             target="_blank"
             _hover={{ textDecoration: "none" }}
           >
-            <Button variant={"ghost"} fontWeight={"600"}>
+            <Button
+              aria-label={"Source Code"}
+              variant={"ghost"}
+              fontWeight={"600"}
+            >
               Source Code
             </Button>
           </Link>
@@ -67,7 +75,11 @@ const Footer = ({ ...props }: Props) => {
             target="_blank"
             _hover={{ textDecoration: "none" }}
           >
-            <Button variant={"ghost"} fontWeight={"600"}>
+            <Button
+              variant={"ghost"}
+              fontWeight={"600"}
+              aria-label={"Found a bug?"}
+            >
               Found a bug?
             </Button>
           </Link>

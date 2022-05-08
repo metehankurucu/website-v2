@@ -23,6 +23,7 @@ const ThemeToggler = ({ onClick = () => {}, ...props }: Props) => {
       boxShadow={boxShadow.md}
       backgroundColor={colors.light}
       onClick={onClickBtn}
+      aria-label="Toggle Theme"
       {...props}
     >
       {colorMode == "light" ? <FaMoon /> : <FaSun />}

@@ -142,6 +142,7 @@ const ContactForm = (props: Props) => {
         ref={captchaRef}
       />
       <Button
+        aria-label="Submit Form"
         isLoading={loading || submitting}
         loadingText={loading ? "HCaptcha Loading.." : "Submitting.."}
         type="submit"
