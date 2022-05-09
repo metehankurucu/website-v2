@@ -66,6 +66,17 @@ export const PROJECTS: Project[] = [
     types: [ProjectType.OpenSource, ProjectType.Hobby],
   },
   {
+    title: "Personal Website v1",
+    description: "My personal website v1 built with Gatsby",
+    developed: ["Website"],
+    image: getProjectImagePath("website-v1.webp"),
+    links: {
+      repo: "https://github.com/metehankurucu/website",
+      web: "https://website-metehankurucu.vercel.app/",
+    },
+    types: [ProjectType.Hobby, ProjectType.OpenSource],
+  },
+  {
     title: "Student Coaching",
     description:
       "A web application for students preparing for the university exam. Students can view the exam result graphics, record the lessons they are studying, and track books and subjects of lessons.",
