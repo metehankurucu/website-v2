@@ -8,7 +8,6 @@ export const emailAddress = "hey@metehan.dev";
 export const fullName = "Metehan Kurucu";
 export const shortDescription = "Software Developer";
 export const siteUrl = "https://metehan.dev";
-export const gaTrackingId = "";
 
 export const NAVBAR_LINKS = [
   {
@@ -41,10 +40,6 @@ export const SOCIAL_LINKS = [
   {
     icon: Icons.Twitter,
     url: "https://twitter.com/metehankurucu",
-  },
-  {
-    icon: Icons.Mail,
-    url: `mailto:${emailAddress}`,
   },
 ];
 

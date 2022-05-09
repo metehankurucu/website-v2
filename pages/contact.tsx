@@ -32,7 +32,7 @@ const Contact = (props: Props) => {
       <PageTitle>Contact Me</PageTitle>
       <Box mb="4">
         <Text textAlign={"center"} fontWeight="600" fontSize={"large"} mb="3">
-          Let&apos;s contact. Alternatively, you can email me from{" "}
+          Let&apos;s talk. Alternatively, you can send email to{" "}
           <Link
             href={`mailto:${emailAddress}`}
             color={"primary"}
@@ -59,7 +59,7 @@ const Contact = (props: Props) => {
           <Image
             maxHeight={isMobile ? "25vh" : "40vh"}
             objectFit="contain"
-            src={getImagePath("letter.png")}
+            src={getImagePath("letter.webp")}
             alt="Contact Illustration"
           />
         </Box>

@@ -6,13 +6,9 @@ import Document, {
   DocumentContext,
 } from "next/document";
 import { Box, ColorModeScript } from "@chakra-ui/react";
-import {
-  fullName,
-  gaTrackingId,
-  shortDescription,
-  siteUrl,
-} from "../constants";
+import { fullName, shortDescription, siteUrl } from "../constants";
 import theme from "../theme";
+import config from "../constants/config";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -59,16 +55,16 @@ class MyDocument extends Document {
           <meta name="twitter:url" content={siteUrl} />
           <meta name="twitter:title" content={fullName} />
           <meta name="twitter:description" content={shortDescription} />
-          {gaTrackingId && (
+          {config.gaTrackingId && (
             <>
               <script
                 async
-                src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
+                src={`https://www.googletagmanager.com/gtag/js?id=${config.gaTrackingId}`}
               />
               <script
                 type="text/javascript"
                 dangerouslySetInnerHTML={{
-                  __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${gaTrackingId}');`,
+                  __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${config.gaTrackingId}');`,
                 }}
               />
             </>

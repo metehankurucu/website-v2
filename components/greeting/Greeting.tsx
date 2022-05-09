@@ -18,7 +18,7 @@ type Props = {
 };
 
 const Greeting = ({ onMore }: Props) => {
-  const imageSrc = useColorModeValue("hey.png", "hey-dark.png");
+  const imageSrc = useColorModeValue("hey.webp", "hey-dark.webp");
   const isMobile = useBreakpointValue({ base: true, md: false });
   const colors = useColors();
   const router = useRouter();

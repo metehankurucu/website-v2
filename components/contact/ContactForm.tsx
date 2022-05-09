@@ -12,19 +12,17 @@ import { useFormspark } from "@formspark/use-formspark";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useColors } from "../../hooks";
 import { boxShadow } from "../../theme";
-
-const FORMSPARK_FORM_ID = "Hx3Ss6kZ";
+import config from "../../constants/config";
 
 interface Props {}
 
 const ContactForm = (props: Props) => {
   const colors = useColors();
-
   const toast = useToast();
   const [token, setToken] = useState("");
   const captchaRef = useRef<HCaptcha | null>(null);
   const [submit, submitting] = useFormspark({
-    formId: FORMSPARK_FORM_ID,
+    formId: config.formsparkFormId!,
   });
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
@@ -137,7 +135,7 @@ const ContactForm = (props: Props) => {
       </FormControl>
       <HCaptcha
         size="invisible"
-        sitekey="8712d415-12ec-49d0-958b-b61634a5eae5"
+        sitekey={config.hCaptchaSiteKey!}
         onVerify={onVerify}
         ref={captchaRef}
       />
