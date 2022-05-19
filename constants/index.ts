@@ -70,6 +70,10 @@ export const techStack = {
       svg: getIconPath("expo.svg"),
     },
     {
+      name: "Tailwind CSS",
+      svg: getIconPath("tailwind.svg"),
+    },
+    {
       name: "Firebase",
       svg: getIconPath("firebase.svg"),
     },
