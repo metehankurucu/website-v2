@@ -24,24 +24,26 @@ export const NAVBAR_LINKS = [
   },
 ];
 
-export const SOCIAL_LINKS = [
-  {
+export const SocialLink = {
+  Github: {
     icon: Icons.Github,
     url: "https://github.com/metehankurucu",
   },
-  {
+  LinkedIn: {
     icon: Icons.LinkedIn,
-    url: "https://linkedin.com/in/metehankurucu",
+    url: "https://www.linkedin.com/in/metehankurucu/",
   },
-  {
-    icon: Icons.Instagram,
-    url: "https://instagram.com/metehan.kurucu",
-  },
-  {
+  Twitter: {
     icon: Icons.Twitter,
     url: "https://twitter.com/metehankurucu",
   },
-];
+  Instagram: {
+    icon: Icons.Instagram,
+    url: "https://www.instagram.com/metehan.kurucu/",
+  },
+};
+
+export const SOCIAL_LINKS = Object.values(SocialLink);
 
 export const techStack = {
   main: [

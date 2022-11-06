@@ -11,7 +11,8 @@ import { useColors } from "../../hooks";
 import { getImagePath } from "../../helpers";
 import { layoutWidth } from "../../theme";
 import { useRouter } from "next/router";
-import { shortDescription } from "../../constants";
+import { shortDescription, SocialLink, SOCIAL_LINKS } from "../../constants";
+import IconLink from "../IconLink";
 
 type Props = {
   onMore: () => void;
@@ -52,7 +53,13 @@ const Greeting = ({ onMore }: Props) => {
         >
           {shortDescription}
         </Text>
-        <Box display={"flex"} alignItems="center" my="5">
+        <Box
+          display={"flex"}
+          alignItems="center"
+          my="5"
+          flexWrap="wrap"
+          justifyContent={"center"}
+        >
           <Button
             aria-label="More"
             colorScheme={"cyan"}
@@ -72,6 +79,24 @@ const Greeting = ({ onMore }: Props) => {
           >
             View Projects
           </Button>
+          <Box
+            flexDirection={"row"}
+            display={"flex"}
+            flexWrap="wrap"
+            justifyContent={"center"}
+          >
+            {[SocialLink.Github, SocialLink.LinkedIn].map((link) => {
+              const Icon = link.icon;
+              return (
+                <IconLink
+                  aria-label="Social Icon"
+                  key={link.url}
+                  href={link.url}
+                  icon={<Icon />}
+                />
+              );
+            })}
+          </Box>
         </Box>
       </Box>
       <Box
