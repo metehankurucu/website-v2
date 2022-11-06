@@ -35,12 +35,11 @@ const CTA = (props: Props) => {
           height={"10px"}
           width="10px"
           borderRadius={"full"}
-          className="cta-pulse"
-          backgroundColor={colors.primary}
+          backgroundColor={"gray"}
           mr="2"
         />
-        <Text fontWeight="semibold" color={colors.primary}>
-          I&apos;m currently available for work.
+        <Text fontWeight="semibold" color={"gray"}>
+          I&apos;m currently not available for work.
         </Text>
       </Box>
       <Box
