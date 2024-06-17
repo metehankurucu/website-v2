@@ -3,6 +3,15 @@ import { Project, ProjectType } from "../interfaces";
 
 export const PROJECTS: Project[] = [
   {
+    title: "Mailing SaaS Platform",
+    description:
+      "Simplified email campaign management with tracking and scheduling.",
+    developed: ["Web App", "Backend"],
+    image: getProjectImagePath("mailing-dashboard.webp"),
+    types: [ProjectType.Personal],
+    technologies: ["Next.js", "Node.js", "RabbitMQ", "MongoDB"],
+  },
+  {
     title: "Panoyabak",
     description: "A digital board platform includes events.",
     developed: ["Mobile App", "Web App", "Backend"],
@@ -54,6 +63,15 @@ export const PROJECTS: Project[] = [
     },
     types: [ProjectType.OpenSource, ProjectType.Packages],
     technologies: ["TypeScript", "Node.js", "Firebase"],
+  },
+  {
+    title: "WeTransfer CLI",
+    description: "A CLI tool to automate file uploads.",
+    links: {
+      npm: "https://www.npmjs.com/package/wetransfer-cli",
+      repo: "https://github.com/metehankurucu/wetransfer-cli",
+    },
+    types: [ProjectType.OpenSource, ProjectType.Packages],
   },
   {
     title: "Video Calling App",

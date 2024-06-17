@@ -79,6 +79,9 @@ const Projects = ({ allProjects }: Props) => {
               );
             })}
           </Box>
+          <Text fontSize={"smaller"} m="1" fontWeight={"bold"} color="gray">
+            {data.length} results found
+          </Text>
         </Box>
       </Box>
       {data.length === 0 && (
