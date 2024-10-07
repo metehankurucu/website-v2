@@ -6,7 +6,7 @@ export const repoUrl = "https://github.com/metehankurucu/website-v2";
 export const issuesUrl = `${repoUrl}/issues`;
 export const emailAddress = "hey@metehan.dev";
 export const fullName = "Metehan Kurucu";
-export const shortDescription = "Software Developer";
+export const shortDescription = "Software Engineer";
 export const siteUrl = "https://metehan.dev";
 
 export const NAVBAR_LINKS = [
@@ -33,10 +33,10 @@ export const SocialLink = {
     icon: Icons.LinkedIn,
     url: "https://www.linkedin.com/in/metehankurucu/",
   },
-  Twitter: {
-    icon: Icons.Twitter,
-    url: "https://twitter.com/metehankurucu",
-  },
+  // Twitter: {
+  //   icon: Icons.Twitter,
+  //   url: "https://twitter.com/metehankurucu",
+  // },
   Instagram: {
     icon: Icons.Instagram,
     url: "https://www.instagram.com/metehan.kurucu/",
